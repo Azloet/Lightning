@@ -41,7 +41,7 @@ void tree(int startX,int startY,int branch,int size, boolean split){
     tree(endX,endY,branch,size,false);
   }
   //split
-  if(branch<10 && branch>1 && Math.random() > 0.5 && split == false){
+  if(branch<10 && branch>1 && Math.random() > 0.6 && split == false){
     strokeWeight(10-branch);
     stroke((int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200);
     rnd = (float)(Math.random()-0.5);
