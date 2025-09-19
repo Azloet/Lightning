@@ -31,7 +31,7 @@ void tree(int startX,int startY,int branch,int size){
   //main
   if(branch<10){
     strokeWeight(10-branch);
-    stroke((int)(Math.random()*branch)+200,(int)(Math.random()*branch)+200,(int)(Math.random()*branch)+200);
+    stroke((int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200);    
     endX = startX+(int)((Math.random()-0.5)*2*size/sqrt(10-branch));
     endY = startY-(int)((Math.random())*size);
     line(startX,startY,endX,endY);
@@ -44,7 +44,7 @@ void tree(int startX,int startY,int branch,int size){
   //split
   if(branch<10 && branch>1 && Math.random()>.5){
     strokeWeight(10-branch);
-    stroke((int)(Math.random()*branch)+200,(int)(Math.random()*branch)+200,(int)(Math.random()*branch)+200);
+    stroke((int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200,(int)(Math.random()*4*branch)+200);
     endX = startX+(int)((Math.random()-0.5)*2*size/sqrt(10-branch));
     endY = startY-(int)((Math.random())*size);
     line(startX,startY,endX,endY);
